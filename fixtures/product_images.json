@@ -1,0 +1,62 @@
+[
+  {
+    "model": "shop.productimage",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "image_small": "products/small/green_apple.jpg",
+      "image_medium": "products/medium/green_apple.jpg",
+      "image_large": "products/large/green_apple.jpg"
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 2,
+    "fields": {
+      "product": 2,
+      "image_small": "products/small/red_apple.jpg",
+      "image_medium": "products/medium/red_apple.jpg",
+      "image_large": "products/large/red_apple.jpg"
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 3,
+    "fields": {
+      "product": 3,
+      "image_small": "products/small/banana.jpg",
+      "image_medium": "products/medium/banana.jpg",
+      "image_large": "products/large/banana.jpg"
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 4,
+    "fields": {
+      "product": 4,
+      "image_small": "products/small/carrot.jpg",
+      "image_medium": "products/medium/carrot.jpg",
+      "image_large": "products/large/carrot.jpg"
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 5,
+    "fields": {
+      "product": 5,
+      "image_small": "products/small/potato.jpg",
+      "image_medium": "products/medium/potato.jpg",
+      "image_large": "products/large/potato.jpg"
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 6,
+    "fields": {
+      "product": 6,
+      "image_small": "products/small/potato2.jpg",
+      "image_medium": "products/medium/potato2.jpg",
+      "image_large": "products/large/potato2.jpg"
+    }
+  }
+]

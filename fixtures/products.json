@@ -1,0 +1,62 @@
+[
+  {
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+      "name": "Зеленое яблоко",
+      "slug": "green-apple",
+      "subcategory": 1,
+      "price": "89.99"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+      "name": "Красное яблоко",
+      "slug": "red-apple",
+      "subcategory": 1,
+      "price": "99.99"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+      "name": "Желтый банан",
+      "slug": "yellow-banana",
+      "subcategory": 2,
+      "price": "129.50"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+      "name": "Сладкая морковь",
+      "slug": "sweet-carrot",
+      "subcategory": 3,
+      "price": "45.00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 5,
+    "fields": {
+      "name": "Картофель молодой",
+      "slug": "young-potato",
+      "subcategory": 4,
+      "price": "35.99"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 6,
+    "fields": {
+      "name": "Картофель мытый",
+      "slug": "clean-potato",
+      "subcategory": 4,
+      "price": "49.99"
+    }
+  }
+]

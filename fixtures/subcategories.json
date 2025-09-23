@@ -1,0 +1,42 @@
+[
+  {
+    "model": "shop.subcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Яблоки",
+      "slug": "apples",
+      "image": "subcategories/apples.jpg",
+      "category": 1
+    }
+  },
+  {
+    "model": "shop.subcategory",
+    "pk": 2,
+    "fields": {
+      "name": "Бананы",
+      "slug": "bananas",
+      "image": "subcategories/bananas.jpg",
+      "category": 1
+    }
+  },
+  {
+    "model": "shop.subcategory",
+    "pk": 3,
+    "fields": {
+      "name": "Морковь",
+      "slug": "carrots",
+      "image": "subcategories/carrots.jpg",
+      "category": 2
+    }
+  },
+  {
+    "model": "shop.subcategory",
+    "pk": 4,
+    "fields": {
+      "name": "Картофель",
+      "slug": "potatoes",
+      "image": "subcategories/potatoes.jpg",
+      "category": 2
+    }
+  }
+]

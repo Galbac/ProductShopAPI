@@ -1,0 +1,66 @@
+services:
+  web:
+    build: .
+    container_name: shop_api_web
+    restart: always
+    volumes:
+      - static_volume:/app/staticfiles
+      - ./media:/app/media
+    env_file:
+      - .env
+    depends_on:
+      - db
+    networks:
+      - db_network
+
+  db:
+    image: postgres:17-alpine
+    container_name: shop_api_db
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    networks:
+      - db_network
+
+  adminer:
+    image: adminer
+    container_name: shop_api_adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - db_network
+
+  nginx:
+    image: nginx
+    container_name: shop_api_nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d:ro
+      - static_volume:/app/staticfiles
+      - ./media:/app/media
+    depends_on:
+      - web
+    networks:
+      - db_network
+
+volumes:
+  static_volume:
+  postgres_data:
+
+networks:
+  db_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
