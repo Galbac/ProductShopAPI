@@ -49,6 +49,9 @@ docker-compose exec web python manage.py makemigrations
 # Применить миграции
 docker-compose exec web python manage.py migrate
 
+# Собрать статику и статические файлы
+docker-compose exec web python manage.py collectstatic --noinput
+
 # Создать суперпользователя
 docker-compose exec web python manage.py createsuperuser
 
@@ -72,6 +75,9 @@ pip install -r requirements.txt
 # Создать и применить миграции
 python manage.py makemigrations
 python manage.py migrate
+
+# Собрать статику и статические файлы
+python manage.py collectstatic --noinput
 
 # Создать суперпользователя
 python manage.py createsuperuser
